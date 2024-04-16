@@ -1,0 +1,81 @@
+<!-- Describe task in general -->
+<script>
+    function openPage(pageName, elmnt) {
+      // Hide all elements with class="tabcontent" by default */
+      const tabcontent = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<p style="text-align: justify;">
+    You may have seen the following meme text on Internet (click the respective button if you want to read its "normal" version):
+</p>
+
+<button class="tablink" onclick="openPage('Jumbled', this)" id="defaultOpen">Jumbled</button>
+<button class="tablink" onclick="openPage('Normal', this)">Normal</button>
+
+<div id="Jumbled" class="tabcontent">
+    <span translate="no"><p style="text-align: justify;"><b>
+        Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+    </b></p></span>
+</div>
+
+<div id="Normal" class="tabcontent" style="display:none;">
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</div>
+
+<p style="text-align: justify;">
+    Well, there are <u>elements</u> of truth in this. Here is a very interesting <a target="_blank" href="https://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/">article</a> from the real Cambridge University researcher, who is breaking down the meme and explain the phenomena.
+</p>
+
+<p style="text-align: justify;">
+    Let's try to evaluate a level of jumbling. In this mission you are given two words - normal and jumbled version. If the jumbled one is not a version of a normal, you function must return <code>-1</code>. For the totally same looking words return <code>0</code>, of course. Otherwise, exclude first and last characters (they are not jumbled according to the rules) and return an average distance (rounded to 2 digits) between normal position of a character and its jumbled position.
+</p>
+
+<p style="text-align: justify;">
+    Look at the example.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}jumbled-letters.svg" alt="example" style="max-height: 200px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> Two strings <span translate="no">(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+    <strong>Output:</strong> Float number <span translate="no">({% if is_js %}number{% else %}float{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
