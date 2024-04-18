@@ -26,6 +26,10 @@ TESTS = {
             "input": ["research", "rsceearh"],
             "answer": 1.67,
         },
+        {
+            "input": ["tango", "ogant"],
+            "answer": -1,
+        },
     ],
     "Extra": [
         {
@@ -59,6 +63,18 @@ TESTS = {
         {
             "input": ["teenager", "tageener"],
             "answer": 2,
+        },
+        {
+            "input": ["tor", "tor"],
+            "answer": 0,
+        },
+        {
+            "input": ["at", "at"],
+            "answer": 0,
+        },
+        {
+            "input": ["a", "a"],
+            "answer": 0,
         },
     ]
 }
