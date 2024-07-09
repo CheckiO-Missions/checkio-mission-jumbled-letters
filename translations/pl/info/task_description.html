@@ -1,0 +1,100 @@
+<!-- Describe task in general -->
+<!-- <script>
+    function openPage(pageName, elmnt) {
+      // Hide all elements with class="tabcontent" by default */
+      const tabcontent = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<p style="text-align: justify;">
+    You may have seen the following meme text on Internet (click the respective button if you want to read its "normal" version):
+</p> -->
+
+<!-- <button class="tablink" onclick="openPage('Jumbled', this)" id="defaultOpen">Jumbled</button>
+<button class="tablink" onclick="openPage('Normal', this)">Normal</button>
+
+<div id="Jumbled" class="tabcontent">
+    <span translate="no"><p style="text-align: justify;"><b>
+        Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+    </b></p></span>
+</div>
+
+<div id="Normal" class="tabcontent" style="display:none;">
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</div> -->
+
+<p style="text-align: justify;">
+    Być może widzieli Państwo poniższy tekst mema w Internecie (proszę kliknąć na tekst, jeśli chcą Państwo przeczytać jego "normalną" wersję):
+</p>
+
+<details>
+    <summary>
+        <span translate="no"><p style="text-align: justify;"><b>
+            Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+        </b></p></span>
+    </summary>
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</details>
+
+<p style="text-align: justify;">
+    Cóż, są w tym <u>elementy</u> prawdy. Oto bardzo interesujący <a target="_blank" href="https://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/">article</a> od prawdziwego badacza z Uniwersytetu Cambridge, który rozbija mem i wyjaśnia zjawisko.
+</p>
+
+<p style="text-align: justify;">
+    Spróbujmy ocenić poziom jumblingu. W tym zadaniu otrzymują Państwo dwa słowa - normalną i pomieszaną wersję. Jeśli pomieszane słowo nie jest wersją normalnego lub reguła nie jest przestrzegana, funkcja musi zwrócić <code>-1</code>. Dla zupełnie tak samo wyglądających słów proszę zwrócić <code>0</code>, oczywiście. W przeciwnym razie należy wykluczyć pierwszy i ostatni znak (nie są one pomieszane zgodnie z regułą) i zwrócić średnią odległość (zaokrągloną do 2 cyfr) między normalną pozycją znaku a jego pomieszaną pozycją.
+</p>
+
+<p style="text-align: justify;">
+    Jeśli w słowie występują dwie lub więcej takich samych liter, proszę wziąć pod uwagę, że pierwsze pojawienie się znaku w wersji normalnej jest równoważne pierwszemu pojawieniu się tego znaku w wersji pomieszanej itd. 
+</p>
+
+<p style="text-align: justify;">
+    Proszę spojrzeć na przykład.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}jumbled-letters.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Wejście:</strong> Dwa ciągi znaków <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba zmiennoprzecinkowa <span>({% if is_js %}number{% else %}float{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
