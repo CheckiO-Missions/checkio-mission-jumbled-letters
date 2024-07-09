@@ -1,0 +1,100 @@
+<!-- Describe task in general -->
+<!-- <script>
+    function openPage(pageName, elmnt) {
+      // Hide all elements with class="tabcontent" by default */
+      const tabcontent = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<p style="text-align: justify;">
+    You may have seen the following meme text on Internet (click the respective button if you want to read its "normal" version):
+</p> -->
+
+<!-- <button class="tablink" onclick="openPage('Jumbled', this)" id="defaultOpen">Jumbled</button>
+<button class="tablink" onclick="openPage('Normal', this)">Normal</button>
+
+<div id="Jumbled" class="tabcontent">
+    <span translate="no"><p style="text-align: justify;"><b>
+        Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+    </b></p></span>
+</div>
+
+<div id="Normal" class="tabcontent" style="display:none;">
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</div> -->
+
+<p style="text-align: justify;">
+    Vielleicht haben Sie den folgenden Meme-Text im Internet gesehen (klicken Sie auf den Text, wenn Sie seine "normale" Version lesen möchten):
+</p>
+
+<details>
+    <summary>
+        <span translate="no"><p style="text-align: justify;"><b>
+            Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+        </b></p></span>
+    </summary>
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</details>
+
+<p style="text-align: justify;">
+    Nun, es gibt <u>Elemente</u> der Wahrheit darin. Hier ist ein sehr interessanter <a target="_blank" href="https://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/">article</a> von einem echten Forscher der Universität Cambridge, der das Meme entschlüsselt und das Phänomen erklärt.
+</p>
+
+<p style="text-align: justify;">
+    Lassen Sie uns versuchen, eine Stufe des Jumblings zu bewerten. Bei dieser Aufgabe erhalten Sie zwei Wörter - eine normale und eine durcheinander gewürfelte Version. Wenn das durcheinander gewürfelte Wort keine Version eines normalen Wortes ist oder die Regel nicht eingehalten wird, muss Ihre Funktion <code>-1</code> zurückgeben. Bei völlig gleich aussehenden Wörtern geben Sie natürlich <code>0</code> zurück. Andernfalls schließen Sie das erste und das letzte Zeichen aus (sie sind gemäß der Regel nicht durcheinander) und geben den durchschnittlichen Abstand (auf 2 Stellen gerundet) zwischen der normalen Position eines Zeichens und seiner durcheinander gewürfelten Position zurück.
+</p>
+
+<p style="text-align: justify;">
+    Wenn zwei oder mehr gleiche Buchstaben in einem Wort vorkommen, berücksichtigen Sie, dass das erste Auftreten eines Zeichens in der normalen Version dem ersten Auftreten dieses Zeichens in der durcheinandergewürfelten Version entspricht usw. 
+</p>
+
+<p style="text-align: justify;">
+    Sehen Sie sich das Beispiel an.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}jumbled-letters.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zwei Zeichenketten <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Fließkommazahl <span>({% if is_js %}number{% else %}float{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
