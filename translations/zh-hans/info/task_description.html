@@ -1,0 +1,100 @@
+<!-- Describe task in general -->
+<!-- <script>
+    function openPage(pageName, elmnt) {
+      // Hide all elements with class="tabcontent" by default */
+      const tabcontent = document.getElementsByClassName("tabcontent");
+      for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+      // Show the specific tab content
+      document.getElementById(pageName).style.display = "block";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+<p style="text-align: justify;">
+    You may have seen the following meme text on Internet (click the respective button if you want to read its "normal" version):
+</p> -->
+
+<!-- <button class="tablink" onclick="openPage('Jumbled', this)" id="defaultOpen">Jumbled</button>
+<button class="tablink" onclick="openPage('Normal', this)">Normal</button>
+
+<div id="Jumbled" class="tabcontent">
+    <span translate="no"><p style="text-align: justify;"><b>
+        Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+    </b></p></span>
+</div>
+
+<div id="Normal" class="tabcontent" style="display:none;">
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</div> -->
+
+<p style="text-align: justify;">
+    您可能已经在互联网上看到了下面的备忘录文本（如果您想阅读 "正常 "版本，请点击文本）：
+</p>
+
+<details>
+    <summary>
+        <span translate="no"><p style="text-align: justify;"><b>
+            Aoccdrnig to a rsceearh at Cmabrigde Uinervtisy, it deosn't mttaer in waht oredr the ltteers in a wrod are, the olny iprmoetnt tihng is taht the frist and lsat ltteer be at the rghit pclae. The rset can be a toatl mses and you can sitll raed it wouthit porbelm. Tihs is bcuseae the huamn mnid deos not raed ervey lteter by istlef, but the wrod as a wlohe.
+        </b></p></span>
+    </summary>
+    <span translate="no"><p style="text-align: justify;"><b>
+        According to a research at Cambridge University, it doesn't matter in what order the letters in a word are, the only important thing is that the first and last letter be at the right place. The rest can be a total mess and you can still read it without problem. This is because the human mind does not read every letter by itself but the word as a whole.
+    </b></p></span>
+</details>
+
+<p style="text-align: justify;">
+    嗯，其中也有真理的<u>成分</u>。下面是一个非常有趣的<a target="_blank" href="https://www.mrc-cbu.cam.ac.uk/people/matt.davis/cmabridge/">article</a> ，来自真正的剑桥大学研究员，他正在破解这个备忘录并解释这一现象。
+</p>
+
+<p style="text-align: justify;">
+    让我们试着评估一下混淆的程度。在这个任务中，你会得到两个单词--正常版本和杂乱版本。如果杂乱无章的单词不是正常单词的版本，或者没有遵守规则，您的函数必须返回<code>-1</code> 。对于外观完全相同的单词，当然要返回<code>0</code> 。否则，请排除第一个和最后一个字符（根据规则，它们不是错乱的），并返回字符的正常位置与其错乱位置之间的平均距离（四舍五入至两位数）。
+</p>
+
+<p style="text-align: justify;">
+    如果一个单词中有两个或两个以上相同的字母，则认为一个字符在正常版本中的首次出现等同于该字符在错乱版本中的首次出现。 
+</p>
+
+<p style="text-align: justify;">
+    请看这个例子。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}jumbled-letters.svg" alt="example" style="max-height: 300px"/>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>两个字符串 <span>(str{% if is_js %}ing{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出</strong>浮点数 <span>({% if is_js %}number{% else %}float{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<!-- <p>
+    <strong>Preconditions:</strong>
+    <ul>
+    <li><i>both given ints should be between -1000 and 1000</i></li>
+    </ul>
+</p> -->
